@@ -12,7 +12,7 @@ jobs:
     name: Reusable test workflow
 
   another:
-    uses: ./.github/workflows/another
+    uses: ./.github/workflows/another/action.yml
     name: Reusable test workflow
     with:
         input: "This is a Test"
