@@ -18,7 +18,7 @@ jobs:
         input: "This is a Test"
 
   composite:
-    uses: ./.github/workflows/composite.yml
+    uses: ./.github/workflows/composite
     name: composite workflow
     with:
         username: "This is a Test"
