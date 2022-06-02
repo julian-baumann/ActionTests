@@ -1,0 +1,16 @@
+name: Another reusable
+
+on:
+  workflow_call:
+    inputs:
+      input:
+        required: true
+        type: string
+
+jobs:
+  test:
+    name: Another Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Output
+      run: echo ${{ github.event.inputs.input }}

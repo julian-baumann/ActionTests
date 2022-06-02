@@ -1,0 +1,18 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - '**'
+
+
+jobs:
+  reusable_workflow_job:
+    uses: ./.github/workflows/reusable-test.yml
+    name: Reusable test workflow
+
+  another:
+    uses: ./.github/workflows/another
+    name: Reusable test workflow
+    with:
+        input: "This is a Test"
