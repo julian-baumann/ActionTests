@@ -1,0 +1,13 @@
+name: "Composite Workflow"
+description: "Just some test workflow"
+
+inputs:
+  username:
+    description: "Username bro"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Output
+      run: echo ${{ github.event.inputs.username }}
